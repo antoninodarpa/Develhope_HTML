@@ -8,22 +8,48 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Lesson</title>
+    
   </head>
   <body>
-    <form>
-
-      <button disabled>Submit</button>
-      <br>
-      <label for = "Input Field">Quantità</label>
-      <input type = "number" id = "Input Field" name = "Input Field" value = "choosed" min = "0" max = "100" step = "2" autofocus>
-      <br>
-      <label for = "subscribe">Subscribe to my newsletter</label> 
-      <input type = "checkbox" id = "checkbox" name = "subscribe" value = "subscribed" checked>
-      <br>
-      <label for = "date">Data</label> 
-      <input type = "date" id = "date" name = "date" value = "choosed">
-
-    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>mese</th>
+          <th>soldi in entrata</th>
+          <th>soldi in uscita</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>gennaio</td>
+          <td>50$</td>
+          <td>25$</td>
+        </tr>
+        <tr>
+          <td>febbraio</td>
+          <td>20$</td>
+          <td>15$</td>
+        </tr>
+        <tr>
+          <td>marzo</td>
+          <td>60$</td>
+          <td>20$</td>
+        </tr>
+        <tr>
+          <td>aprile</td>
+          <td>90$</td>
+          <td>45$</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Totale</td>
+          <td>220$</td>
+          <td>105$</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
+
 
