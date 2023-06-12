@@ -1,21 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML lesson</title>
-    <meta property="og:title" content="HTML lesson"/>
-    <meta property="og:description" content="How to use HTML"/>
-    <meta property="og:author" content="Antonino D'Arpa"/>
-    <meta property="og:image" content="http://htmlimage.com/image.jpg"/>
-    <meta property="og:url" content="http://htmlesson.com"/>
-    <meta property="og:site_name" content="Web word" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico"/> 
-    
+    <title>HTML Lesson</title>
+
+    <style>
+      header {
+        border: 2px solid red;
+      }
+
+      main {
+        border: 2px solid black;
+      }
+
+      section {
+        border: 1px solid grey;
+      }
+
+      footer {
+        border: 2px solid green;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <h1>This is the main title.</h1>
+      
+      <h2>And along with the second title, they are in the header tag.</h2>
+    </header>
+
+    <p>This is an unordered list of links.</p>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+    </ul>
+    <main>
+      <p>This is the body of the page</p>
+
+      <section>
+        <h3>Inside the body there are some sections.</h3>
+        <br />
+        <p>This is a quotation: <q>Hello world.</q></p>
+      </section>
+
+      <section>
+        <p>This is a superscript text: <sup>text</sup></p>
+        <br />
+       <p> This is a subscript text: <sub>text</sub></p>
+      </section>
+
+      <section>
+        <p>This is an emphasized text: <em>text</em></p>
+        <br />
+      <p>This is a bold text: <b>text</b></p>
+      </section>
+    </main>
+
+    <footer>
+      <h4>This is the end of the page</h4>
+      <br />
+      <p>This a paragraph.</p>
+    </footer>
+  </body>
 </html>
