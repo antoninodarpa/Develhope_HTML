@@ -1,55 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML Lesson</title>
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
   </head>
-  <body>
-    <table>
-      <thead>
-        <tr>
-          <th>mese</th>
-          <th>soldi in entrata</th>
-          <th>soldi in uscita</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>gennaio</td>
-          <td>50$</td>
-          <td>25$</td>
-        </tr>
-        <tr>
-          <td>febbraio</td>
-          <td>20$</td>
-          <td>15$</td>
-        </tr>
-        <tr>
-          <td>marzo</td>
-          <td>60$</td>
-          <td>20$</td>
-        </tr>
-        <tr>
-          <td>aprile</td>
-          <td>90$</td>
-          <td>45$</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Totale</td>
-          <td>220$</td>
-          <td>105$</td>
-        </tr>
-      </tfoot>
-    </table>
+
+    <body>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required>
+      <br>
+      <label for="first_name">First name:</laberl>
+      <br>
+      <input type="text" name="first_name" placeholder="Antonino" id="first_name" required>
+      <label for="last_name">Last name:</label>
+      <input type="text" name="last_name" placeholder="D'Arpa" id="last_name" required>
+      <label for="birthdate">Date of birth:</label>
+      <input type="date" name="birthdate" id="birthdate" required>
+      <label for="phone">Phone number:</label>
+      <input type="tel" name="phone" patter="[0-9]{10}" id="phone" required>
+      <label for="plan">Seleziona il piano:</label>
+      <select name="plan" id="plan" required>
+        <option value="" selected disabled>Seleziona un piano</option>
+        <option value="free">Piano gratuito</option>
+        <option value="basic">Piano base (prezzo: $20)</option>
+        <option value="standard">Piano plus (prezzo: $40)</option>
+        <option value="premium">Piano premium (prezzo: $60)</option>
+      </select>
+      <label for="pro">Piano pro (prezzo: 99)</label>
+      <input type="checkbox" name="checkbox" id="checkbox">
+      <label for="form-cc">Numero carta di credito:</label>
+      <input id="form-cc" name="cc" type="text" required maxlength="12"/>
+      <label for="form-cvc">CVC:</label>
+      <input id="form-cvc" name="cvc" type="text" required maxlength="3"/>
+      <label for="form-exp">Data di scadenza:</label>
+      <input id="form-exp" name="exp" type="date" required/>
+      <label for="form-address">Indirizzo di fatturamento:</label>
+      <input type="text" id="form-address" name="address" required/>
+
+
+
+      
   </body>
 </html>
+
 
 
