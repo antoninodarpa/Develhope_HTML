@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    
-    <title>HTML Lesson</title>
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <style>
       label {
         display: block;
       }
     </style>
   </head>
+  <body>
+    <form action="#">
+      <div>
+        <label for="form-email">Email</label>
+        <input type="email" id="form-email" name="email" required />
+        <label for="form-pass">Password</label>
+        <input type="password" id="form-pass" name="pass" required />
+      </div>
+      <div>
+        <label for="form-name">Name and surname</label>
+        <input type="text" id="form-name" name="name" required/>
+        <label for="form-dob">Date of birth</label>
+        <input type="date" id="form-dob" name="dob" required />
+        <label for="form-tel">Phone number</label>
+        <input type="tel" id="form-tel" name="tel" required/>
+      </div>
+      <div>
+        <label for="form-plan">Plans</label>
+        <select id="form-plan" name="plan" required>
+          <option value="0">Free</option>
+          <optgroup label="Monthly">
+            <option value="199">1.99€/month</option>
+            <option value="599">5.99€/month</option>
+            <option value="1199">11.99€/month</option>
+          </optgroup>
+        </select>
+        <label for="form-pro">PRO plan</label>
+        <input id="form-pro" name="pro" type="checkbox" required/>
+      </div>
+      <div>
+        <label for="form-cc">Credit card number</label>
+        <input id="form-cc" name="cc" type="text" required maxlength="12"/>
+        <label for="form-cvc">CVC</label>
+        <input id="form-cvc" name="cvc" type="text" required maxlength="3"/>
+        <label for="form-exp">Expiration date</label>
+        <input id="form-exp" name="exp" type="date" required/>
+        <label for="form-address">Address</label>
+        <input type="text" id="form-address" name="address" required/>
+      </div>
 
-    <body>
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" required>
-      <label for="password">Password:</label>
-      <input type="password" name="password" id="password" required>
-      <br>
-      <label for="first_name">First name:</laberl>
-      <br>
-      <input type="text" name="first_name" placeholder="Antonino" id="first_name" required>
-      <label for="last_name">Last name:</label>
-      <input type="text" name="last_name" placeholder="D'Arpa" id="last_name" required>
-      <label for="birthdate">Date of birth:</label>
-      <input type="date" name="birthdate" id="birthdate" required>
-      <label for="phone">Phone number:</label>
-      <input type="tel" name="phone" patter="[0-9]{10}" id="phone" required>
-      <label for="plan">Seleziona il piano:</label>
-      <select name="plan" id="plan" required>
-        <option value="" selected disabled>Seleziona un piano</option>
-        <option value="free">Piano gratuito</option>
-        <option value="basic">Piano base (prezzo: $20)</option>
-        <option value="standard">Piano plus (prezzo: $40)</option>
-        <option value="premium">Piano premium (prezzo: $60)</option>
-      </select>
-      <label for="pro">Piano pro (prezzo: 99)</label>
-      <input type="checkbox" name="checkbox" id="checkbox">
-      <label for="form-cc">Numero carta di credito:</label>
-      <input id="form-cc" name="cc" type="text" required maxlength="12"/>
-      <label for="form-cvc">CVC:</label>
-      <input id="form-cvc" name="cvc" type="text" required maxlength="3"/>
-      <label for="form-exp">Data di scadenza:</label>
-      <input id="form-exp" name="exp" type="date" required/>
-      <label for="form-address">Indirizzo di fatturamento:</label>
-      <input type="text" id="form-address" name="address" required/>
-
-
-
-      
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
-
-
-
