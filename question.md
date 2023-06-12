@@ -1,5 +1,5 @@
-Given the starting form, validate the fields:
+Try to replicate the navbar html structure in the png file, without using CSS properties.
+**Suggestion**
+In order to replicate the navbar html structure, try to use the semantic tag `<nav>`. For the links try to use a not ordered list.
 
-- All fields should be marked as mandatory
-- Fields related to credit card and CVC should have a validation about the maximum length.
 
