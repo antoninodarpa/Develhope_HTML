@@ -1,5 +1,8 @@
-Try to replicate the navbar html structure in the png file, without using CSS properties.
+
+Replicate the html structure of the card in the png file, without applying CSS properties.
+
 **Suggestion**
-In order to replicate the navbar html structure, try to use the semantic tag `<nav>`. For the links try to use a not ordered list.
+Try to use the html article tag in order to replicate the card's structure.
+
 
 
