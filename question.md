@@ -1,8 +1,10 @@
+Create a HTML blog page.
+* The page should have an article, a footer and a form.
+* The article should have a title, a paragraph and background pictures.
+* The form should have a mandatory email field and a submit button.
 
-Replicate the html structure of the card in the png file, without applying CSS properties.
+Use semantic tags as much as possible.
 
-**Suggestion**
-Try to use the html article tag in order to replicate the card's structure.
 
 
 
